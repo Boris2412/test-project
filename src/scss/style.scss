@@ -53,6 +53,7 @@
     }
     &:hover {
       color: $le_accent;
+      transition: all .3s;
     }
   }
 }
@@ -71,6 +72,7 @@
   &__text {
     color: $le_dark;
     line-height: 64px;
+    margin: 40px 0;
   }
 }
 
@@ -83,6 +85,7 @@
     font-size: 1.25rem;
     color: $le_dark;
     font-weight: 700;
+    margin: 20px 0;
   }
   &__list {
     font-size: 1.25rem;
@@ -143,5 +146,49 @@
   background: $le_dark;
   background-image: url('../img/map2.png');
   background-size: cover;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 125px 0;
+  }
 }
 
+.section-heading {
+  &__text {
+    text-align: center;
+    margin: 0 0 21px;
+  }
+  &__subheading {
+    text-align: center;
+    color: $le_subheading;
+    font-size: 1.125rem;
+    margin: 0;
+  }
+}
+
+.order-steps {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    
+  }
+  &__icon {
+    width: 95px;
+    max-width: 100%;
+    height: 95px;
+    border-radius: 999px;
+    border: 5px solid #286690;
+    background-color: $le_accent;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  &__img {
+    width: 60px;
+    max-width: 100%;
+    margin: auto;
+  }
+  &__txt {
+
+  }
+}
