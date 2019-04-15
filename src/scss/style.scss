@@ -1,22 +1,147 @@
-$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-
 @import "fonts.scss";
+@import "colors.scss";
+@import "typography.scss";
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-body {
-  font-family: $font-stack;
-  #logo {
-    width: 10rem;
+.header {
+  background-color: rgba(16, 16, 29, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0;
   }
-  .container {
-    img {
-      width: 20rem;
+}
+
+.logo  {
+  width: 246px;
+  height: 20px;
+  &__img {
+    width: 100%;
+  }
+}
+
+.nav {
+  &__list {
+    margin: 0;
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    margin-right: 56px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: $le_light;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    &--active {
+      color: $le_accent;
+    }
+    &:hover {
+      color: $le_accent;
     }
   }
 }
+
+
+
+.first-screen {
+  background-image: url('../img/hero-bg.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 150px 0;
+  }
+  &__text {
+    color: $le_dark;
+    line-height: 64px;
+  }
+}
+
+.blue {
+  color: $le_accent;
+}
+
+.info-bl {
+  &__text {
+    font-size: 1.25rem;
+    color: $le_dark;
+    font-weight: 700;
+  }
+  &__list {
+    font-size: 1.25rem;
+    color: $le_dark;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 34px;  
+    }
+  &__item {
+    &::before {
+      content: "-";
+    }
+  }
+  &__btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 77px;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    padding: 15px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8125rem;
+    letter-spacing: 0.25px;
+    line-height: 1;
+    margin-right: 27px;
+  }
+}
+
+.btn-primary {
+  background-color: $le_accent;
+  border: 1px solid $le_light;
+  border-radius: 4px;
+  color: $le_light;
+  &:hover {
+    background-color: #286690;
+    transition: all .3s;
+  }
+}
+
+.btn-secondary {
+  background-color: $le_light;
+  border: 1px solid #6f6d7b;
+  border-radius: 4px;
+  color: $le_dark;
+  &:hover {
+    background-color: #286690;
+    border: 1px solid $le_light;
+    color: $le_light;
+    transition: all .3s;
+  }
+}
+
+
+.orders {
+  background: $le_dark;
+  background-image: url('../img/map2.png');
+  background-size: cover;
+}
+

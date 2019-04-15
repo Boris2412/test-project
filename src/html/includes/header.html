@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="stylesheet" href="css/style.bundle.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title><%=title%></title>
-  </head>
-  <body>
-    <header><img src="img/logo.svg" id="logo" /></header>
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="css/style.bundle.css" />
+
+  <title><%=title%></title>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container">
+
+      <div class="header__block">
+
+        <div class='logo'>
+          <img src="img/logo.svg" class="logo__img" />
+        </div>
+
+        <div class="menubar">
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link nav__link--active">Бизнес</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">О нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">цены</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Оформить заказ</a>
+              </li>
+            </ul>
+          </nav>
+        </div> <!-- End menubar -->
+
+
+
+      </div><!-- End header__block -->
+    </div><!-- End container -->
+
+  </header>

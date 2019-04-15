@@ -1,9 +1,140 @@
 <% var data = {
-  title: "Заголовок | Проект",
-  author: "Harrix"
+  title: "LoremIpsum.Net | Test project",
+  copyrights: "© 2018 «LoremIpsum.net» Все права защищены."
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container">Первая страница.</div>
+<main class="main-content">
+  <section class="first-screen">
+
+    <div class="container">
+
+      <div class="first-screen__block">
+
+        <div class="first-screen__heading">
+          <h1 class="first-screen__text"> <span class="blue">Lorem ipsum</span> dolor sit amet <br>
+          consectetur <span class="blue">adipiscing</span>
+        </h1>
+        </div>
+
+        <div class="info-bl">
+          <p class="info-bl__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+          <ul class="info-bl__list">
+            <li class="info-bl__item">
+              Totam rem aperiam eaque ipsa
+            </li>
+            <li class="info-bl__item">
+              Sit voluptatem accusantium doloremque laudantium
+            </li>
+            <li class="info-bl__item">
+              Sed ut perspiciatis, unde omnis iste natus error
+            </li>
+          </ul>
+
+          <div class="info-bl__btns cta-btn">
+            <a href="#" class="info-bl__btn btn-primary">Заказать</a>
+            <a href="#" class="info-bl__btn btn-secondary">Подробнее</a>
+          </div>
+        </div>
+
+      </div><!-- End first-screen__block -->
+
+    </div><!-- End container -->
+
+  </section>
+
+  <section class="orders">
+
+    <div class="container">
+
+      <div class="orders__block">
+
+        <div class="section-heading orders__heading">
+          <h2 class="section-heading__text">Оформление <span class="blue">Заказа</span></h2>
+          <p class="section-heading__subheading">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+        </div>
+
+        <div class="order-steps orders__info">
+
+          <div class="order-steps__item">
+            <div class="order-steps__icon">
+              <img src="#" alt="lorem">
+            </div>
+            <div class="order-steps__txt">
+              Lorem ipsum dolor <br>sit amet
+            </div>
+          </div>
+
+          <div class="order-steps__item">
+            <div class="order-steps__icon">
+              <img src="#" alt="lorem">
+            </div>
+            <div class="order-steps__txt">
+              Сonsecteturadipiscing elit
+            </div>
+          </div>
+
+          <div class="order-steps__item">
+            <div class="order-steps__icon">
+              <img src="#" alt="lorem">
+            </div>
+            <div class="order-steps__txt">
+              Sed do eiusmod tempor
+            </div>
+          </div>
+
+          <div class="order-steps__item">
+            <div class="order-steps__icon">
+              <img src="#" alt="lorem">
+            </div>
+            <div class="order-steps__txt">
+              Esse cillum dolore<br>eu fugiat
+            </div>
+          </div>
+
+
+          <div class="order-steps__item">
+            <div class="order-steps__icon">
+              <img src="#" alt="lorem">
+            </div>
+            <div class="order-steps__txt">
+              Excepteur sint occaecat <br>cupidatat non proident
+            </div>
+          </div>
+
+        </div><!-- End order-steps -->
+
+        <div class="form-order orders__form">
+          <div class="form-order__top">
+            <select name="list1">
+              <option>Выберите тип системы</option>
+              <option>Sed ut perspiciatis</option>
+              <option>Nemo enim ipsam</option>
+              <option>Et harum quidem</option>
+              <option>Temporibus autem</option>
+              <option>Itaque earum rerum</option>
+            </select>
+            <input type="email" name="email">
+            <input type="text" name="firstname">
+          </div>
+
+          <div class="form-order__bottom">
+            <input type="range" min="0" max="100" step="1" value="75">
+            <input type="file" name="f">
+          </div>
+
+          <div class="form-order__btn">
+            <input type="submit" value="Отправить">
+          </div>
+          </form>
+
+
+        </div><!-- End orders__block -->
+
+      </div><!-- End container -->
+
+  </section>
+
+</main>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
