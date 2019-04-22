@@ -1,6 +1,6 @@
 <% var data = {
   title: "LoremIpsum.Net | Test project",
-  copyrights: "© 2018 «LoremIpsum.net» Все права защищены."
+  copyrights: "© 2018 «LOREMIPSUM.NET» Все права защищены."
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
@@ -32,8 +32,8 @@
           </ul>
 
           <div class="info-bl__btns cta-btn">
-            <a href="#" class="info-bl__btn btn-primary">Заказать</a>
-            <a href="#" class="info-bl__btn btn-secondary">Подробнее</a>
+            <a href="#" class="info-bl__btn btn btn-primary">Заказать</a>
+            <a href="#" class="info-bl__btn btn btn-secondary">Подробнее</a>
           </div>
         </div>
 
@@ -106,25 +106,52 @@
 
         <form class="form-order orders__form">
           <div class="form-order__top">
-            <select name="list1">
-              <option>Выберите тип системы</option>
+            <select name="list1" size="1">
+              <option selected>Выберите тип системы</option>
+              <option>Sed ut perspiciatis</option>
+              <option>Nemo enim ipsam</option>
+              <option>Et harum quidem</option>
+              <option>Temporibus autem</option>
+              <option>Itaque earum rerum</option>
+              <option>Sed ut perspiciatis</option>
+              <option>Nemo enim ipsam</option>
+              <option>Et harum quidem</option>
+              <option>Temporibus autem</option>
+              <option>Itaque earum rerum</option>
+              <option>Sed ut perspiciatis</option>
+              <option>Nemo enim ipsam</option>
+              <option>Et harum quidem</option>
+              <option>Temporibus autem</option>
+              <option>Itaque earum rerum</option>
               <option>Sed ut perspiciatis</option>
               <option>Nemo enim ipsam</option>
               <option>Et harum quidem</option>
               <option>Temporibus autem</option>
               <option>Itaque earum rerum</option>
             </select>
-            <input type="email" name="email">
-            <input type="text" name="firstname">
+            <input type="email" name="email" placeholder="Ваш e-mail">
+            <input type="text" name="firstname" placeholder="Ваше имя">
           </div>
 
           <div class="form-order__bottom">
-            <input type="range" min="0" max="100" step="1" value="75">
-            <input type="file" name="f">
+
+            <div class="form-order__range range-block">
+              <div class="range-block__texts">
+                <div class="range-block__heading">Sed ut perspiciatis, unde omnis iste natus</div>
+                <div class="range-block__percent"></div>
+              </div>
+              <input class="range-block__slider" type="range" min="0" max="100" step="1" value="75">
+            </div>
+
+            <div class="form-order__upload upload-block">
+              <label for="myfile" class="upload-block__label">Прикрепить файл</label>
+              <input class="upload-block__upload" type="file" name="myfile" multiple="multiple">
+            </div>
+
           </div>
 
-          <div class="form-order__btn">
-            <input type="submit" value="Отправить">
+          <div class="form-order__btn form-btn">
+            <input class="btn btn-primary form-btn__send" type="submit" value="Отправить">
           </div>
         </form>
 
