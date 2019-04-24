@@ -1,6 +1,6 @@
-@import "fonts.scss";
-@import "colors.scss";
-@import "typography.scss";
+@import "_fonts.scss";
+@import "_colors.scss";
+@import "_typography.scss";
 
 .container {
   max-width: 1170px;
@@ -60,6 +60,32 @@
 }
 
 
+.nav-btn {
+  max-width: 100%;
+  display: none;
+  &__button {
+    border: 0;
+    background: none;
+    padding: 18px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $le_light;
+    outline: none;
+    &:hover {
+      background: $le_accent;
+    }
+  }
+  &__line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: $le_dark;
+    margin-bottom: 3px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 
 .first-screen {
   background-image: url('../img/hero-bg.jpg');
@@ -367,9 +393,6 @@ input[type='text'], [type='email'], textarea {
     color: transparent;
     text-shadow: 0 0 0 #2196f3;
     font-family: 'Lato';
-    &:hover {
-
-    }
   }
   &__label {
     color: $le_dark;
@@ -645,3 +668,13 @@ input[type='text'], [type='email'], textarea {
     top: 1px;
   }
 }
+
+
+
+
+
+
+
+
+
+@import "_media.scss";
