@@ -14,6 +14,7 @@
   top: 0;
   width: 100%;
   z-index: 9999;
+
   &__block {
     display: flex;
     justify-content: space-between;
@@ -23,9 +24,10 @@
   }
 }
 
-.logo  {
+.logo {
   width: 246px;
   height: 20px;
+
   &__img {
     width: 100%;
   }
@@ -36,22 +38,31 @@
     margin: 0;
     display: flex;
     list-style: none;
+
+    &--open {
+      display: flex;
+    }
   }
+
   &__item {
     margin-right: 56px;
+
     &:last-child {
       margin-right: 0;
     }
   }
+
   &__link {
     color: $le_light;
     font-weight: 600;
     font-size: 0.8125rem;
     text-transform: uppercase;
     text-decoration: none;
+
     &--active {
       color: $le_accent;
     }
+
     &:hover {
       color: $le_accent;
       transition: all .3s;
@@ -63,6 +74,7 @@
 .nav-btn {
   max-width: 100%;
   display: none;
+
   &__button {
     border: 0;
     background: none;
@@ -71,16 +83,26 @@
     cursor: pointer;
     background: $le_light;
     outline: none;
+
     &:hover {
       background: $le_accent;
     }
+    &:active,
+    &:focus {
+      outline: none;
+    }
+    &::-moz-focus-inner {
+      border: 0;
+    }
   }
+
   &__line {
     display: block;
     width: 20px;
     height: 2px;
     background: $le_dark;
     margin-bottom: 3px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -91,11 +113,13 @@
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   min-height: 100vh;
+
   &__block {
     display: flex;
     flex-direction: column;
     padding: 150px 0;
   }
+
   &__text {
     color: $le_dark;
     line-height: 64px;
@@ -114,25 +138,29 @@
     font-weight: 700;
     margin: 20px 0;
   }
+
   &__list {
     font-size: 1.25rem;
     color: $le_dark;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    line-height: 34px;  
-    }
+    line-height: 34px;
+  }
+
   &__item {
     &::before {
       content: "-";
     }
   }
+
   &__btns {
     display: flex;
     flex-direction: row;
     margin-top: 77px;
     flex-wrap: wrap;
   }
+
   &__btn {
     margin-right: 27px;
   }
@@ -146,6 +174,7 @@
   letter-spacing: 0.25px;
   line-height: 1;
   border-radius: 4px;
+
   &:hover {
     background-color: #286690;
     transition: all .3s;
@@ -163,6 +192,7 @@
   background-color: $le_light;
   border: 1px solid #6f6d7b;
   color: $le_dark;
+
   &:hover {
     border: 1px solid $le_light;
     color: $le_light;
@@ -173,34 +203,41 @@
   background: $le_dark;
   background-image: url('../img/map2.png');
   background-size: cover;
+
   &__block {
     display: flex;
     flex-direction: column;
     padding: 125px 0;
   }
+
   &__info {
     margin: 80px 0 0;
   }
+
   &__form {
     margin-top: 90px;
   }
 }
-.form-order{
+
+.form-order {
   &__top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
   }
+
   &__bottom {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px 0 0;
   }
+
   &__range {
     width: 65.5%;
   }
+
   &__btn {
     width: 31.5%;
     margin: 40px auto 0;
@@ -226,6 +263,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
     &::-webkit-slider-thumb {
       -webkit-appearance: none;
       appearance: none;
@@ -241,9 +279,10 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
+
     &::-webkit-slider-runnable-track {
       border: 1px solid $le_light;
-      color: transparent; 
+      color: transparent;
       background: rgba(255, 255, 255, .7);
       height: 5px;
       border-radius: 5px;
@@ -251,6 +290,7 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
+
     &::-moz-range-thumb {
       width: 24px;
       height: 24px;
@@ -262,6 +302,7 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
+
     &::-moz-range-track {
       border: inherit;
       background: transparent;
@@ -273,9 +314,11 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
+
     &::-ms-tooltip {
       display: none;
     }
+
     &::-ms-thumb {
       position: relative;
       z-index: 999;
@@ -289,15 +332,18 @@
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
+
     &::-ms-fill-lower {
       background: transparent;
     }
+
     &::-ms-fill-upper {
       background: transparent;
     }
+
     &::-ms-track {
       border: 1px solid $le_light;
-      color: transparent; 
+      color: transparent;
       background: rgba(255, 255, 255, .7);
       height: 5px;
       border-radius: 5px;
@@ -309,18 +355,22 @@
     &:hover {
       cursor: pointer;
     }
+
     &:focus {
       outline: none;
-    }  
     }
+  }
+
   &__texts {
     display: flex;
     justify-content: space-between;
-    font-size: 1.125rem;  
+    font-size: 1.125rem;
   }
+
   &__percent {
     padding-left: 30px;
     font-weight: 600;
+
     &::after {
       content: " %";
       width: 20px;
@@ -330,41 +380,50 @@
   }
 }
 
-input[type='text'], [type='email'], select, textarea {
-	background-color: rgba(255,255,255, 0.85);
+input[type='text'],
+[type='email'],
+select,
+textarea {
+  background-color: rgba(255, 255, 255, 0.85);
   border: 1px solid $le_light;
   border-radius: 4px;
-	color: $le_dark;
+  color: $le_dark;
   font-size: 1.125rem;
   font-family: 'Lato';
-	margin: 0;
-	padding: 10px 14px;
+  margin: 0;
+  padding: 10px 14px;
   width: 31.5%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
+
   &::-webkit-input-placeholder {
     color: $le_dark;
   }
+
   &::-moz-placeholder {
     color: $le_dark;
   }
+
   &:-ms-input-placeholder {
     color: $le_dark;
   }
+
   &:-moz-placeholder {
     color: $le_dark;
   }
 }
 
-input[type='text'], [type='email'], textarea {
+input[type='text'],
+[type='email'],
+textarea {
   &:focus {
     border: 1px solid $le_accent;
     box-shadow: 0px 0px 10px $le_accent;
@@ -374,14 +433,15 @@ input[type='text'], [type='email'], textarea {
 .form-btn {
   &__send {
     width: 100%;
-    font-size: 0.9375rem; 
-   }
+    font-size: 0.9375rem;
+  }
 }
 
 .upload-block {
   display: block;
   width: 31.5%;
   position: relative;
+
   &__upload {
     position: absolute;
     width: 100%;
@@ -394,12 +454,13 @@ input[type='text'], [type='email'], textarea {
     text-shadow: 0 0 0 #2196f3;
     font-family: 'Lato';
   }
+
   &__label {
     color: $le_dark;
     font-family: 'Lato';
     font-weight: 600;
     border: 2px solid $le_accent;
-    background: rgba(255,255,255, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     box-sizing: border-box;
     font-family: sans-serif;
     width: 100%;
@@ -411,18 +472,19 @@ input[type='text'], [type='email'], textarea {
     padding-top: 12px;
     border-radius: 4px;
     text-align: center;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url('../img/document-btn-i.svg');
-      background-repeat: no-repeat;
-      top: 22%;
-      left: 22%;
-      width: 18px;
-      height: 18px;
-    }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/document-btn-i.svg');
+    background-repeat: no-repeat;
+    top: 22%;
+    left: 22%;
+    width: 18px;
+    height: 18px;
+  }
+}
 
 
 
@@ -431,6 +493,7 @@ input[type='text'], [type='email'], textarea {
     text-align: center;
     margin: 0 0 21px;
   }
+
   &__subheading {
     text-align: center;
     color: $le_subheading;
@@ -443,16 +506,19 @@ input[type='text'], [type='email'], textarea {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     min-width: 180px;
+
     &:last-child::after {
       content: none;
       background-image: none;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -464,6 +530,7 @@ input[type='text'], [type='email'], textarea {
       height: 6px;
     }
   }
+
   &__icon {
     width: 95px;
     max-width: 100%;
@@ -475,11 +542,13 @@ input[type='text'], [type='email'], textarea {
     align-items: center;
     align-content: center;
   }
+
   &__img {
     width: 36px;
     max-width: 100%;
     margin: auto;
   }
+
   &__txt {
     text-align: center;
     margin-top: 22px;
@@ -489,6 +558,7 @@ input[type='text'], [type='email'], textarea {
 
 .footer {
   background-color: $le_footerbgc;
+
   &__block {
     display: flex;
     justify-content: space-between;
@@ -496,9 +566,11 @@ input[type='text'], [type='email'], textarea {
     flex-wrap: wrap;
     padding: 30px 0;
   }
+
   &__copyrights {
     font-size: 0.8125rem;
     position: relative;
+
     &::before {
       content: "";
       width: 1px;
@@ -509,9 +581,11 @@ input[type='text'], [type='email'], textarea {
       position: absolute;
     }
   }
+
   &__partners {
     display: flex;
     position: relative;
+
     &::before {
       content: "";
       width: 1px;
@@ -531,10 +605,12 @@ input[type='text'], [type='email'], textarea {
     text-decoration: none;
     margin-left: 60px;
     position: relative;
+
     &:hover {
       color: $le_footerlinkhover;
       transition: all .3s;
     }
+
     &:first-child {
       margin-left: 0;
     }
@@ -552,6 +628,7 @@ input[type='text'], [type='email'], textarea {
     left: -24px;
     top: 1px;
   }
+
   &:hover::before {
     position: absolute;
     background-image: url('../img/sprite.png');
@@ -574,6 +651,7 @@ input[type='text'], [type='email'], textarea {
     left: -24px;
     top: -1px;
   }
+
   &:hover::before {
     position: absolute;
     background-image: url('../img/sprite.png');
@@ -596,6 +674,7 @@ input[type='text'], [type='email'], textarea {
     left: -24px;
     top: 1px;
   }
+
   &:hover::before {
     position: absolute;
     background-image: url('../img/sprite.png');
@@ -612,12 +691,14 @@ input[type='text'], [type='email'], textarea {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+
   &__link {
     font-size: 0.8125rem;
     color: $le_light;
     text-decoration: none;
     margin-left: 50px;
     position: relative;
+
     &:hover {
       color: $le_footerlinkhover;
       transition: all .3s;
@@ -636,6 +717,7 @@ input[type='text'], [type='email'], textarea {
     left: -25px;
     top: 2px;
   }
+
   &:hover::before {
     position: absolute;
     background-image: url('../img/sprite.png');
@@ -658,6 +740,7 @@ input[type='text'], [type='email'], textarea {
     left: -18px;
     top: 1px;
   }
+
   &:hover::before {
     position: absolute;
     background-image: url('../img/sprite.png');
