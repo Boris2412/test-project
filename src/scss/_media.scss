@@ -26,9 +26,7 @@
     .first-screen {
         background-position: center center;
         min-height: 70vh;
-    }
 
-    .first-screen {
         &__text {
             line-height: 54px;
             margin: 40px 0 20px;
@@ -166,18 +164,21 @@
     .nav {
         &__list {
             display: none;
+
             &--open {
                 display: flex;
                 flex-direction: column;
-                border-top: 1px solid rgba(255,255,255, .3);
+                border-top: 1px solid rgba(255, 255, 255, .3);
                 margin: 18px 0 0;
                 padding: 18px 0 0;
             }
         }
+
         &__item {
             margin: 0;
-            padding: 10px 0; 
+            padding: 10px 0;
         }
+
         &__link {
             display: block;
         }
@@ -192,21 +193,26 @@
 
     .order-steps {
         justify-content: center;
+
         &__item {
             min-width: 200px;
             margin-top: 20px;
+
             &:after {
                 content: none;
                 position: static;
             }
         }
+
         &__icon {
             width: 70px;
             height: 70px;
         }
+
         &__img {
             width: 26px;
         }
+
         &__txt {
             margin-top: 10px;
         }
@@ -223,9 +229,11 @@
         &__block {
             align-items: flex-start;
         }
+
         &__partners {
             flex-direction: column;
         }
+
         &__copyrights {
             margin-right: 5%;
         }
@@ -235,6 +243,7 @@
     .partner {
         &__link {
             margin-bottom: 8px;
+
             &:first-child {
                 margin-left: 15px;
             }
@@ -243,6 +252,7 @@
 
     .contacts {
         flex-direction: column;
+
         &__link {
             margin: 0 0 8px;
         }
@@ -263,5 +273,215 @@
         padding: 0 15px;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
 
+    h2 {
+        font-size: 1.75rem;
+    }
+
+
+    .first-screen {
+        background-position: 25%;
+
+        &__text {
+            line-height: 41px;
+            margin: 30px 0 0;
+        }
+
+        &__block {
+            padding: 100px 0 60px;
+        }
+    }
+
+    .info-bl {
+        &__btns {
+            margin-top: 24px;
+        }
+    }
+
+    .orders {
+        &__block {
+            padding: 60px 0;
+        }
+    }
+
+
+    [type=email],
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .form-order {
+        &__range {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        &__btn {
+            width: 100%;
+        }
+    }
+
+
+    .upload-block {
+        width: 50%;
+
+        &:before {
+            left: 15%;
+        }
+    }
+
+
+
+}
+
+
+@media (max-width: 568px) {
+
+    .container {
+        max-width: 568px;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 190px;
+        height: 16px;
+    }
+
+    .btn {}
+
+    .info-bl {
+        &__btn {
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    .upload-block {
+        width: 100%;
+    }
+
+    .range-block {
+        &__heading {
+            width: 70%;
+        }
+    }
+
+    .footer {
+        &__block {
+            flex-direction: column;
+            padding: 50px 0;
+        }
+
+        &__copyrights {
+            width: 100%;
+            margin-bottom: 25px;
+            margin-right: 0;
+            font-size: 1rem;
+        }
+
+        &__partners {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        &__contacts {
+            width: 100%;
+        }
+    }
+
+    .contacts {
+        &__link {
+            font-size: 1rem;
+            padding-left: 24px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .partner {
+        &__link {
+            margin-left: 24px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            &:first-child {
+                margin-left: 24px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+    .qiwipartner {
+        &::before {
+            top: 3px;
+        }
+
+        &:hover::before {
+            top: 3px;
+        }
+    }
+
+
+    .yandexpartner {
+        &::before {
+            top: 1px;
+            left: -22px;
+        }
+
+        &:hover::before {
+            top: 1px;
+            left: -22px;
+        }
+    }
+
+
+    .webmpartner {
+        &::before {
+            left: -23px;
+            top: 3px;
+        }
+
+        &:hover::before {
+            left: -23px;
+            top: 3px;
+        }
+    }
+
+
+    .email {
+        &::before {
+            left: 0px;
+            top: 4px;
+        }
+
+        &:hover::before {
+            left: 0px;
+            top: 4px;
+        }
+    }
+
+
+    .vk {
+        &::before {
+            left: 3px;
+            top: 3px;
+        }
+        &:hover::before {
+            left: 3px;
+            top: 3px;
+        }
+    }
 }
